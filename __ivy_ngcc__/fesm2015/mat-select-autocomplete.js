@@ -75,7 +75,7 @@ SelectAutocompleteService.ctorParameters = () => [];
  */
 class SelectAutocompleteComponent {
     constructor() {
-        this.selectPlaceholder = "search...";
+        this.selectPlaceholder = "buscar...";
         this.disabled = false;
         this.display = "display";
         this.value = "value";
@@ -200,7 +200,7 @@ class SelectAutocompleteComponent {
                     if (this.selectedValue.length > 1 &&
                         this.selectedValue.length > this.labelCount) {
                         this.displayString += ` (+${this.selectedValue.length -
-                            this.labelCount} others)`;
+                            this.labelCount} outros)`;
                     }
                 }
             }
