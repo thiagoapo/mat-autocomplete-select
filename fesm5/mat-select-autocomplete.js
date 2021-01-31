@@ -4,7 +4,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+//import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 /**
  * @fileoverview added by tsickle
@@ -30,7 +32,7 @@ var SelectAutocompleteService = /** @class */ (function () {
  */
 var SelectAutocompleteComponent = /** @class */ (function () {
     function SelectAutocompleteComponent() {
-        this.selectPlaceholder = "search...";
+        this.selectPlaceholder = "buscar...";
         this.disabled = false;
         this.display = "display";
         this.value = "value";
@@ -190,7 +192,7 @@ var SelectAutocompleteComponent = /** @class */ (function () {
                     if (this.selectedValue.length > 1 &&
                         this.selectedValue.length > this.labelCount) {
                         this.displayString += " (+" + (this.selectedValue.length -
-                            this.labelCount) + " others)";
+                            this.labelCount) + " outros)";
                     }
                 }
             }
